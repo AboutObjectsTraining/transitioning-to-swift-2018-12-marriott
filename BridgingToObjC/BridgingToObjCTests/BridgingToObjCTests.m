@@ -18,15 +18,15 @@
     XCTAssertNil(class1);
     
     // Use fully qualified class name (ModuleName.ClassName) when introspecting bridged Swift classes.
-    Class class2 = NSClassFromString(@"SwiftComponents.DetailTableViewController");
+    Class class2 = NSClassFromString(@"SCODetailTableViewController");
     NSLog(@"%@", class2);
     XCTAssertNotNil(class2);
 }
 
 - (void)testIsKindOfClass {
-    id controller = [[DetailTableViewController alloc] init];
+    id controller = [[SCODetailTableViewController alloc] init];
     
-    Class class = [DetailTableViewController class];
+    Class class = [SCODetailTableViewController class];
     NSLog(@"%@", class);
     XCTAssertTrue([controller isKindOfClass:class]);
 }

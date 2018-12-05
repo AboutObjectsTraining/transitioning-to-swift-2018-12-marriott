@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB141CB51DDE32A300E8AA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB141CB41DDE32A300E8AA14 /* main.m */; };
-		AB141CB81DDE32A300E8AA14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB141CB71DDE32A300E8AA14 /* AppDelegate.m */; };
-		AB141CBB1DDE32A300E8AA14 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB141CBA1DDE32A300E8AA14 /* MasterTableViewController.m */; };
+		AB141CB81DDE32A300E8AA14 /* BOCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB141CB71DDE32A300E8AA14 /* BOCAppDelegate.m */; };
+		AB141CBB1DDE32A300E8AA14 /* BOCMasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB141CBA1DDE32A300E8AA14 /* BOCMasterTableViewController.m */; };
 		AB141CBE1DDE32A300E8AA14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB141CBC1DDE32A300E8AA14 /* Main.storyboard */; };
 		AB141CC01DDE32A300E8AA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB141CBF1DDE32A300E8AA14 /* Assets.xcassets */; };
 		AB141CC31DDE32A300E8AA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB141CC11DDE32A300E8AA14 /* LaunchScreen.storyboard */; };
@@ -23,8 +23,8 @@
 		ABFC754A1DDE690F0064A27B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC75491DDE690F0064A27B /* Person.swift */; };
 		ABFC754C1DDE6ABE0064A27B /* PersonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC754B1DDE6ABE0064A27B /* PersonDataSource.swift */; };
 		ABFC754E1DDE71450064A27B /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC754D1DDE71450064A27B /* PersonsTableViewController.swift */; };
-		ABFC75521DDE7A1B0064A27B /* PersonDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC75511DDE7A1B0064A27B /* PersonDetailTableViewController.m */; };
-		ABFC75561DDF78730064A27B /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC75551DDF78730064A27B /* Pet.m */; };
+		ABFC75521DDE7A1B0064A27B /* BOCPersonDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC75511DDE7A1B0064A27B /* BOCPersonDetailTableViewController.m */; };
+		ABFC75561DDF78730064A27B /* BOCPet.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC75551DDF78730064A27B /* BOCPet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,10 +75,10 @@
 /* Begin PBXFileReference section */
 		AB141CB01DDE32A300E8AA14 /* BridgingToObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgingToObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB141CB41DDE32A300E8AA14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB141CB61DDE32A300E8AA14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AB141CB71DDE32A300E8AA14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AB141CB91DDE32A300E8AA14 /* MasterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
-		AB141CBA1DDE32A300E8AA14 /* MasterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
+		AB141CB61DDE32A300E8AA14 /* BOCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BOCAppDelegate.h; sourceTree = "<group>"; };
+		AB141CB71DDE32A300E8AA14 /* BOCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOCAppDelegate.m; sourceTree = "<group>"; };
+		AB141CB91DDE32A300E8AA14 /* BOCMasterTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BOCMasterTableViewController.h; sourceTree = "<group>"; };
+		AB141CBA1DDE32A300E8AA14 /* BOCMasterTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOCMasterTableViewController.m; sourceTree = "<group>"; };
 		AB141CBD1DDE32A300E8AA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB141CBF1DDE32A300E8AA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB141CC21DDE32A300E8AA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,10 +97,10 @@
 		ABFC75491DDE690F0064A27B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		ABFC754B1DDE6ABE0064A27B /* PersonDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDataSource.swift; sourceTree = "<group>"; };
 		ABFC754D1DDE71450064A27B /* PersonsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
-		ABFC75511DDE7A1B0064A27B /* PersonDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetailTableViewController.m; sourceTree = "<group>"; };
-		ABFC75531DDE7A3B0064A27B /* PersonDetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonDetailTableViewController.h; sourceTree = "<group>"; };
-		ABFC75541DDF78730064A27B /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
-		ABFC75551DDF78730064A27B /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		ABFC75511DDE7A1B0064A27B /* BOCPersonDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOCPersonDetailTableViewController.m; sourceTree = "<group>"; };
+		ABFC75531DDE7A3B0064A27B /* BOCPersonDetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BOCPersonDetailTableViewController.h; sourceTree = "<group>"; };
+		ABFC75541DDF78730064A27B /* BOCPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOCPet.h; sourceTree = "<group>"; };
+		ABFC75551DDF78730064A27B /* BOCPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOCPet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,19 +162,19 @@
 		AB141CB21DDE32A300E8AA14 /* BridgingToObjC */ = {
 			isa = PBXGroup;
 			children = (
-				AB141CB61DDE32A300E8AA14 /* AppDelegate.h */,
-				AB141CB71DDE32A300E8AA14 /* AppDelegate.m */,
+				AB141CB61DDE32A300E8AA14 /* BOCAppDelegate.h */,
+				AB141CB71DDE32A300E8AA14 /* BOCAppDelegate.m */,
 				ABFC75491DDE690F0064A27B /* Person.swift */,
-				ABFC75541DDF78730064A27B /* Pet.h */,
-				ABFC75551DDF78730064A27B /* Pet.m */,
+				ABFC75541DDF78730064A27B /* BOCPet.h */,
+				ABFC75551DDF78730064A27B /* BOCPet.m */,
 				ABFC754B1DDE6ABE0064A27B /* PersonDataSource.swift */,
 				ABFC754D1DDE71450064A27B /* PersonsTableViewController.swift */,
-				ABFC75511DDE7A1B0064A27B /* PersonDetailTableViewController.m */,
-				ABFC75531DDE7A3B0064A27B /* PersonDetailTableViewController.h */,
-				ABFC75481DDE690F0064A27B /* BridgingToObjC-Bridging-Header.h */,
-				AB141CB91DDE32A300E8AA14 /* MasterTableViewController.h */,
-				AB141CBA1DDE32A300E8AA14 /* MasterTableViewController.m */,
+				ABFC75511DDE7A1B0064A27B /* BOCPersonDetailTableViewController.m */,
+				ABFC75531DDE7A3B0064A27B /* BOCPersonDetailTableViewController.h */,
+				AB141CB91DDE32A300E8AA14 /* BOCMasterTableViewController.h */,
+				AB141CBA1DDE32A300E8AA14 /* BOCMasterTableViewController.m */,
 				AB141CBC1DDE32A300E8AA14 /* Main.storyboard */,
+				ABFC75481DDE690F0064A27B /* BridgingToObjC-Bridging-Header.h */,
 				AB141CBF1DDE32A300E8AA14 /* Assets.xcassets */,
 				AB141CC11DDE32A300E8AA14 /* LaunchScreen.storyboard */,
 				AB141CC41DDE32A300E8AA14 /* Info.plist */,
@@ -404,12 +404,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABFC754C1DDE6ABE0064A27B /* PersonDataSource.swift in Sources */,
-				ABFC75561DDF78730064A27B /* Pet.m in Sources */,
-				AB141CBB1DDE32A300E8AA14 /* MasterTableViewController.m in Sources */,
-				AB141CB81DDE32A300E8AA14 /* AppDelegate.m in Sources */,
+				ABFC75561DDF78730064A27B /* BOCPet.m in Sources */,
+				AB141CBB1DDE32A300E8AA14 /* BOCMasterTableViewController.m in Sources */,
+				AB141CB81DDE32A300E8AA14 /* BOCAppDelegate.m in Sources */,
 				ABFC754E1DDE71450064A27B /* PersonsTableViewController.swift in Sources */,
 				ABFC754A1DDE690F0064A27B /* Person.swift in Sources */,
-				ABFC75521DDE7A1B0064A27B /* PersonDetailTableViewController.m in Sources */,
+				ABFC75521DDE7A1B0064A27B /* BOCPersonDetailTableViewController.m in Sources */,
 				AB141CB51DDE32A300E8AA14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,6 +4,7 @@
 //
 import UIKit
 
+@objc (SCODetailTableViewController)
 public class DetailTableViewController: UITableViewController
 {
     @objc public var text: String?

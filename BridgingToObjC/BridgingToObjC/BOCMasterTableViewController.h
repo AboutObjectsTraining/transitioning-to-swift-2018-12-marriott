@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterTableViewController : UITableViewController
+@interface BOCMasterTableViewController : UITableViewController
 
 @end
 

@@ -5,12 +5,12 @@
 import UIKit
 
 
-class PersonsTableViewController: UITableViewController
+@objc (BOCPersonsTableViewController) class PersonsTableViewController: UITableViewController
 {
     @IBOutlet var dataSource: PersonDataSource?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailController = segue.destination as? PersonDetailTableViewController,
+        guard let detailController = segue.destination as? BOCPersonDetailTableViewController,
             let indexPath = tableView?.indexPathForSelectedRow else { return }
         
         detailController.person = dataSource?.person(at: indexPath)

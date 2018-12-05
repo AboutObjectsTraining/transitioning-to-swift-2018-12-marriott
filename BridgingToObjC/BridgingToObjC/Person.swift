@@ -12,11 +12,11 @@ class Person: NSObject
     
     @objc var mood: Mood = .cheerful
     
-    func changeMood() {
+    @objc func changeMood() {
         mood = Mood(rawValue: Int(arc4random_uniform(5))) ?? .cheerful
     }
     
-    init(firstName: String? = nil, lastName: String? = nil, pet: Pet? = nil) {
+    @objc init(firstName: String? = nil, lastName: String? = nil, pet: Pet? = nil) {
         self.firstName = firstName
         self.lastName = lastName
         self.pet = pet
@@ -24,13 +24,14 @@ class Person: NSObject
     }
 }
 
+
 extension Person
 {
-    @objc var fName: String? {
+    private var fName: String? {
         if let first = firstName, first == "" { return nil }
         return firstName
     }
-    @objc var lName: String? {
+    private var lName: String? {
         if let last = lastName, last == "" { return nil }
         return lastName
     }
@@ -43,13 +44,19 @@ extension Person
         }
     }
     
-    var petDescription: String {
+    @objc var petDescription: String {
         guard let pet = pet else { return "None" }
         return "\(pet.name) (\(pet.type)), toys: \(pet.toys)"
     }
 }
 
-// MARK: Flattened attribute values
+// MARK: - Flattened attribute values
+
+extension String {
+    static let empty = ""
+    static let delimiter = ", "
+}
+
 extension Person
 {
     @objc var petTypeText: String? {
@@ -57,7 +64,6 @@ extension Person
     }
     
     @objc var petToysText: String? {
-        // Passing constant rather than literal avoids Swift 3 compiler bug
         return pet?.toys.reduce(String.empty) {
             let delimiter = $0.isEmpty ? String.empty : String.delimiter
             // `name` property visible here because `toys` property bridged as `[Toy]`
@@ -68,11 +74,6 @@ extension Person
     @objc var moodText: String? {
         return mood.description
     }
-}
-
-extension String {
-    static let empty = ""
-    static let delimiter = ", "
 }
 
 extension PetType: CustomStringConvertible

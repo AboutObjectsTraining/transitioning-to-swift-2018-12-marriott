@@ -4,9 +4,9 @@
 //
 import UIKit
 
-class PersonDataSource: NSObject
+@objc (BOCPersonDataSource) class PersonDataSource: NSObject
 {
-    let spot = Pet(name: "Spot", type: .dog)
+    @objc let spot = Pet(name: "Spot", type: PetType.dog)
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -15,7 +15,7 @@ class PersonDataSource: NSObject
         tableView.reloadData()
     }
     
-    lazy var persons: [Person] = [
+    @objc lazy var persons: [Person] = [
         Person(firstName: "Fred", lastName: "Smith", pet: Pet(name: "Fido", type: .dog)),
         Person(firstName: "Jill", lastName: "Jones", pet: Pet(name: "Leo", type: .cat)),
         Person(firstName: "Jim", lastName: ""),
@@ -24,7 +24,7 @@ class PersonDataSource: NSObject
         Person(firstName: "Sue", lastName: "Yu")
     ]
     
-    public func person(at indexPath: IndexPath) -> Person {
+    @objc public func person(at indexPath: IndexPath) -> Person {
         return persons[indexPath.row]
     }
 }
@@ -46,7 +46,7 @@ extension PersonDataSource: UITableViewDataSource
 
 extension PersonDataSource
 {
-    func populate(cell: UITableViewCell, at indexPath: IndexPath) {
+    @objc func populate(cell: UITableViewCell, at indexPath: IndexPath) {
         cell.textLabel?.text = person(at: indexPath).fullName
         cell.detailTextLabel?.text = "current mood:  \(person(at: indexPath).mood)"
     }

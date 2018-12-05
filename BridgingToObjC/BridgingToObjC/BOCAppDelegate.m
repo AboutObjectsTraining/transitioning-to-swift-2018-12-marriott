@@ -6,12 +6,12 @@
 //  Copyright © 2016 About Objects. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "BOCAppDelegate.h"
 
-@interface AppDelegate ()
+@interface BOCAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation BOCAppDelegate
 
 @end

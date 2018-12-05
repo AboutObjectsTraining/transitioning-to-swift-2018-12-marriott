@@ -5,7 +5,7 @@
 import UIKit
 
 @IBDesignable
-public class FooterView: UIView
+@objc (SCOFooterView) public class FooterView: UIView
 {
     @IBInspectable public var text: String? = "Hello, World!"
     

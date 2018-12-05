@@ -2,28 +2,28 @@
 // Copyright (C) 2015 About Objects, Inc. All Rights Reserved.
 // See LICENSE.txt for this example's licensing information.
 //
-#import "MasterTableViewController.h"
+#import "BOCMasterTableViewController.h"
 
 // Module import for SwiftComponents framework
 @import SwiftComponents;
 
 
-NSString *RowNumberText(NSIndexPath *indexPath) {
+NSString *BOCRowNumberText(NSIndexPath *indexPath) {
     return [NSString stringWithFormat:@"Row %@", @(indexPath.row + 1)];
 }
 
-@implementation MasterTableViewController
+@implementation BOCMasterTableViewController
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    DetailTableViewController *controller = segue.destinationViewController;
-    controller.text = RowNumberText(self.tableView.indexPathForSelectedRow);
+    SCODetailTableViewController *controller = segue.destinationViewController;
+    controller.text = BOCRowNumberText(self.tableView.indexPathForSelectedRow);
 }
 
 @end
 
 
-@implementation MasterTableViewController (DataSource)
+@implementation BOCMasterTableViewController (DataSource)
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -33,7 +33,7 @@ NSString *RowNumberText(NSIndexPath *indexPath) {
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MasterCell"];
-    cell.textLabel.text = RowNumberText(indexPath);
+    cell.textLabel.text = BOCRowNumberText(indexPath);
     return cell;
 }
 

@@ -3,10 +3,10 @@
 // See LICENSE.txt for this example's licensing information.
 //
 
-#import "Pet.h"
+#import "BOCPet.h"
 
 
-@implementation Toy
+@implementation BOCToy
 - (instancetype)initWithName:(NSString *)name {
     if (!(self = [super init])) return nil;
     self.name = [name copy];
@@ -23,33 +23,33 @@
 @end
 
 
-@implementation Pet
+@implementation BOCPet
 
 + (NSArray *)dogToys
 {
-    return @[[Toy toyWithName:@"ball"], [Toy toyWithName:@"rope"]];
+    return @[[BOCToy toyWithName:@"ball"], [BOCToy toyWithName:@"rope"]];
 }
 
 + (NSArray *)catToys
 {
-    return @[[Toy toyWithName:@"yarn"], [Toy toyWithName:@"mousie"]];
+    return @[[BOCToy toyWithName:@"yarn"], [BOCToy toyWithName:@"mousie"]];
 }
 
-- (instancetype)initWithName:(NSString *)name type:(PetType)type
+- (instancetype)initWithName:(NSString *)name type:(BOCPetType)type
 {
     if (!(self = [super init])) return nil;
     
     self.name = [name copy];
-    self.type = type;
+    self.petType = type;
     
-    self.toys = type == PetTypeDog ? [self.class dogToys] : [self.class catToys];
+    self.toys = type == BOCPetTypeDog ? [self.class dogToys] : [self.class catToys];
     
     return self;
 }
 
-+ (instancetype)petWithName:(NSString *)name type:(PetType)type
++ (instancetype)petWithName:(NSString *)name type:(BOCPetType)type
 {
-    return [[[self class] alloc] initWithName:name type:type];
+    return [[self.class alloc] initWithName:name type:type];
 }
 
 @end

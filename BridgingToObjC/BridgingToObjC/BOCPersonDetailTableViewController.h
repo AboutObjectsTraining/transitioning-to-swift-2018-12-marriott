@@ -6,6 +6,6 @@
 
 @class Person;
 
-@interface PersonDetailTableViewController : UITableViewController
+@interface BOCPersonDetailTableViewController : UITableViewController
 @property (strong, nonatomic) Person *person;
 @end
